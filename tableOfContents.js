@@ -70,7 +70,7 @@ menu.className = 'menu-tausta';
 
 
 let tiedotusAsiat = getSubHeaders('TIEDOTUSASIAT');
-appendToMenu(menu, 'TIEDOTUSASIAT', tiedotusAsiat);
+if (tiedotusAsiat) appendToMenu(menu, 'TIEDOTUSASIAT', tiedotusAsiat);
 
 let tapahtumat = getSubHeaders('TAPAHTUMAT');
 appendToMenu(menu, 'TAPAHTUMAT', tapahtumat);
